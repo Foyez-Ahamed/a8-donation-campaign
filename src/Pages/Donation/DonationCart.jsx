@@ -18,9 +18,9 @@ const DonationCart = ({donationDetail}) => {
          
        <h2 style={{backgroundColor : category_bg, color : text_bg}} className="w-[75px] text-center py-[1px] rounded-md font-medium">{category}</h2>
 
-       <h3 className="text-[20px] font-bold mt-2">{title}</h3>
+       <h3 className="md:text-[12px] lg:text-[20px] font-bold mt-2">{title}</h3>
 
-       <p style={{color : text_bg}} className="text-[18px] font-medium mt-2">${price}</p>
+       <p style={{color : text_bg}} className="lg:text-[18px]  lg:font-medium mt-2">${price}</p>
 
        <Link to={`/donate/${id}`}>
        <button style={{backgroundColor : text_bg}} className="mt-2 px-4 text-white font-medium py-2 rounded-lg">View Details</button>

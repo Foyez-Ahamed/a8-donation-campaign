@@ -27,14 +27,19 @@ const DonateCart = ({donate}) => {
 
     return (
         <div>
-           <div className="mt-6">
+           <div className="mt-6 relative">
 
-            <div className="relative">
-                <img className="w-full h-[200px] lg:h-screen object-cover" src={image}alt="" />
                 <div>
+                <img className="w-full h-[200px] lg:h-screen object-cover" src={image}alt="" />
+
+                {/* <div className="bg-red-500">
+                <button onClick={handleDonate} style={{backgroundColor : text_bg}} className="absolute bottom-[20px] left-7 text-white px-6 py-2 rounded-md">Donate $ {price}</button>
+                </div> */}
+                </div>
+
+                <div className="bg-[#00000080] w-full h-[80px] opacity-90  absolute bottom-[64%] md:bottom-[54%] lg:bottom-[26%]">
                 <button onClick={handleDonate} style={{backgroundColor : text_bg}} className="absolute bottom-[20px] left-7 text-white px-6 py-2 rounded-md">Donate $ {price}</button>
                 </div>
-            </div>
 
             <p className="mt-7 text-2xl lg:text-3xl font-bold">{title}</p>
 

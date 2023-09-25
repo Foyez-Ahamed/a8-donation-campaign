@@ -11,7 +11,7 @@ const Banner = () => {
         <div className="absolute top-20">
            <h1 className=" text-xl lg:text-4xl font-bold">I Grow By Helping People In Need</h1>
 
-           <input type="text" placeholder="Search here...." className="input input-bordered rounded-e-none lg:w-full max-w-xs mt-6" />
+           <input type="text" placeholder="Search here...." className="input input-bordered rounded-e-none lg:w-full max-w-xs mt-6"/>
            <button className="px-6 py-3 bg-[#FF444A] rounded-e-lg text-white">Search</button>
          </div>
 

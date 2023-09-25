@@ -9,7 +9,7 @@ const DonationsCard = ({donation}) => {
       <Link to= {`/donate/${id}`}>
 
        <div style={{backgroundColor : card_bg}} className={`card card-compact rounded-md shadow-xl`}>
-       <figure><img src={image} alt="Shoes" /></figure>
+       <figure><img src={image} className="w-full object-cover" alt="card-image" /></figure>
 
        <div className="card-body">
        <h2 style={{backgroundColor : category_bg, color : text_bg}} className="w-[75px] text-center py-[1px] rounded-md font-medium">{category}</h2>
