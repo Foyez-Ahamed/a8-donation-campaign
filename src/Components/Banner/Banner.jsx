@@ -2,11 +2,11 @@
 const Banner = () => {
     return (
         <div>
-
-              <div className="hero min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/dBxg2QF/stock-photo-multicultral-volunteers-lettering-shirts-holding-packages-clothes-charity-center-removeb.png)'}}>
-         <div className="bg-[#FFFFFFF2] bg-opacity-50"></div>
-          <div>
-            <div className="text-center">
+{/* 
+              <div className="hero min-h-screen
+              " style={{backgroundImage: 'url(https://i.ibb.co/tPz3tK9/Rectangle-4281.png)', backgroundColor: 'white', opacity : 90}}>
+              <div>
+              <div className="text-center">
                 <h1 className="text-5xl">I Grow By Helping People In Need</h1>
                 
                 <div className="mt-8">
@@ -15,7 +15,7 @@ const Banner = () => {
                 </div>
             </div>
           </div>
-              </div>
+              </div> */}
             
         </div>
     );

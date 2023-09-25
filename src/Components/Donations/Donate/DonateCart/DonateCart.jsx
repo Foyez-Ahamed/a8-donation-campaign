@@ -8,21 +8,18 @@ const DonateCart = ({donate}) => {
 
         const addToDonate = [];
 
-        const donations = JSON.parse(localStorage.getItem('Donate'));
+        const donations = JSON.parse(localStorage.getItem('donation'));
+
 
         if(!donations) {
             addToDonate.push(donate);
-            localStorage.setItem('Donation', JSON.stringify(addToDonate));
+            localStorage.setItem('donation', JSON.stringify(addToDonate));
             swal("Good job!", "Donation added successfully!", "success");
-        }  
 
-        else{
-            const isDonateExists = donations.find(donation => donation.id === id);
-
-            if(!isDonateExists) {
-                addToDonate.push(...donations, donate);
-                localStorage.setItem('Donation', JSON.stringify(addToDonate));
-            }
+        } else {
+            addToDonate.push(...donations, donate)
+            localStorage.setItem('donation', JSON.stringify(addToDonate));
+            swal("Good job!", "Donation added successfully!", "success");
         }
     }
 
