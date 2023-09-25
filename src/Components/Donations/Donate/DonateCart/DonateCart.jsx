@@ -30,7 +30,7 @@ const DonateCart = ({donate}) => {
            <div className="mt-6">
 
             <div className="relative">
-                <img className="w-full h-[200px] lg:h-screen" src={image} alt="" />
+                <img className="w-full h-[200px] lg:h-screen object-cover" src={image}alt="" />
                 <div>
                 <button onClick={handleDonate} style={{backgroundColor : text_bg}} className="absolute bottom-[20px] left-7 text-white px-6 py-2 rounded-md">Donate $ {price}</button>
                 </div>

@@ -29,7 +29,7 @@ const Donation = () => {
             </div>
 
              {donationDetails.length > 4 && <div   className="mt-8 text-center">
-                <button onClick={() => setShowAll(!showAll)} className="bg-[#009444] px-5 py-2 rounded-lg text-white font-bold">{showAll ? 'Show less' : 'Show All'}</button>
+                <button onClick={() => setShowAll(!showAll)} className="bg-[#009444] px-5 py-2 rounded-lg text-white font-bold">{showAll ? 'Show Less' : 'Show All'}</button>
                 </div>}
         </div>
     );
