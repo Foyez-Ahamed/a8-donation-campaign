@@ -1,5 +1,6 @@
 import DonationsCard from "./DonationsCard";
 
+
 const Donations = ({donations}) => {
     
     return (
@@ -13,6 +14,5 @@ const Donations = ({donations}) => {
             
         </div>
     );
-};
-
+    }
 export default Donations;
