@@ -5,12 +5,12 @@ const Navbar = () => {
     return (
         <div>
             <section className="flex justify-between items-center">
-                {/* logo */}
+               
                 <div>
                     <img className=" w-[100px] lg:w-[180px]" src={logo} alt="" />
                 </div>
 
-                {/* navlinks */}
+                
                 <div>
                     <nav>
                         <ul className="flex gap-3 lg:gap-6">
