@@ -14,11 +14,11 @@ const Navbar = () => {
                 <div>
                     <nav>
                         <ul className="flex gap-3 lg:gap-6">
-                            <NavLink to='/' className={({isActive, isPending}) => isActive? 'text-[#FF444A] underline' : isPending? 'pending' : ""}><li >Home</li></NavLink>
+                            <NavLink to='/' className={({isActive, isPending}) => isActive? 'text-[#FF444A] underline' : isPending? 'pending' : ""}><li className="text-[16px] font-medium">Home</li></NavLink>
 
-                            <NavLink to='/donation' className={({isActive, isPending}) => isActive? 'text-[#FF444A] underline' : isPending? 'pending' : ""}><li >Donation</li></NavLink>
+                            <NavLink to='/donation' className={({isActive, isPending}) => isActive? 'text-[#FF444A] underline' : isPending? 'pending' : ""}><li className="text-[16px] font-medium" >Donation</li></NavLink>
 
-                            <NavLink to='statistics' className={({isActive, isPending}) => isActive? 'text-[#FF444A] underline' : isPending? 'pending' : ""}><li >Statistics</li></NavLink>
+                            <NavLink to='statistics' className={({isActive, isPending}) => isActive? 'text-[#FF444A] underline' : isPending? 'pending' : ""}><li className="text-[16px] font-medium">Statistics</li></NavLink>
                         </ul>
                     </nav>
                 </div>

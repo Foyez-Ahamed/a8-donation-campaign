@@ -1,24 +1,24 @@
-
 import Banner from "../../Components/Banner/Banner";
 import Donations from "../../Components/Donations/Donations";
 import { useEffect, useState } from "react";
 
 const Home = () => {
 
-    const [bannerLoad, setBannerLoad] = useState([]);
+    const [loadData, setLoadData] = useState([]);
     
     useEffect(() => {
         fetch('/donation.json')
         .then(res => res.json())
-        .then(data => setBannerLoad(data))
+        .then(data => setLoadData(data))
     },[])
 
 
     return (
         <div>
-           <Banner bannerLoad = {bannerLoad} setBannerLoad = {setBannerLoad}></Banner>
+           <Banner loadData = {loadData} setLoadData = {setLoadData}> </Banner>
+
             <div className="mt-16">
-            <Donations donations = {bannerLoad}></Donations>
+            <Donations loadData = {loadData}></Donations>
             </div>
         </div>
     );

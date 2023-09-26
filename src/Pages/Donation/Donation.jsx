@@ -15,7 +15,7 @@ const Donation = () => {
         if(donations){
             setDonationDetails(donations)
         } else {
-            setNodata('No donate yet!')
+            setNodata('No Donate yet !')
         }
 
     } ,[])
@@ -24,7 +24,7 @@ const Donation = () => {
         <div>
             
             {
-                noData ? <p className="flex justify-center items-center mt-16">{noData}</p> : 
+                noData ? <p className="flex justify-center items-center mt-24 text-[24px] font-bold">{noData}</p> : 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-16">
                     {
                         showAll ? donationDetails.map((donationDetail, index) => <DonationCart key={index} donationDetail = {donationDetail}></DonationCart>) : 

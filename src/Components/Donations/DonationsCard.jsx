@@ -16,8 +16,7 @@ const DonationsCard = ({donation}) => {
        <p style={{color : text_bg}} className="text-[18px] font-medium mt-2">{title}</p>
         </div>
        </div>
-
-
+       
       </Link>
     );
 };
