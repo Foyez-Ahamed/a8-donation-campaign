@@ -1,5 +1,25 @@
 
-const Banner = () => {
+const Banner = ({bannerLoad, setBannerLoad}) => {
+
+
+    // const handleForm = (e) => {
+    //     e.preventDefault();
+    //     const searchInput = e.target.search.value;
+    //     if(bannerLoad){
+    //        setBannerLoad(searchInput);
+    //     }
+
+    //     const searchCategory = bannerLoad.filter(load => load.category === searchInput);
+
+
+    //     if(bannerLoad.length > 0){
+    //         setBannerLoad(searchCategory);
+    //     } else{
+    //        setBannerLoad(searchCategory)
+    //     }
+    // }
+
+
     return (
        <div className="relative">
        
@@ -11,8 +31,10 @@ const Banner = () => {
         <div className="absolute top-20">
            <h1 className=" text-xl lg:text-4xl font-bold">I Grow By Helping People In Need</h1>
 
-           <input type="text" placeholder="Search here...." className="input input-bordered rounded-e-none lg:w-full max-w-xs mt-6"/>
+           <form>
+           <input type="text" placeholder="Search here...." name = "search"className="input input-bordered rounded-e-none lg:w-full max-w-xs mt-6"/>
            <button className="px-6 py-3 bg-[#FF444A] rounded-e-lg text-white">Search</button>
+           </form>
          </div>
 
         </div>

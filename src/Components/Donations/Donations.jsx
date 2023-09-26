@@ -1,17 +1,7 @@
-import { useEffect, useState } from "react";
 import DonationsCard from "./DonationsCard";
 
+const Donations = ({donations}) => {
 
-const Donations = () => {
-
-    const [donations, setDonations] = useState([]);
-
-    useEffect(() => {
-        fetch('/donation.json')
-        .then(res => res.json())
-        .then(data => setDonations(data))
-    },[])
-    
     return (
         <div>
 
@@ -24,4 +14,5 @@ const Donations = () => {
         </div>
     );
     }
+    
 export default Donations;

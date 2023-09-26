@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-
 import { PieChart, Pie, Cell, } from 'recharts';
+
 
 
 const Statistics = () => {
@@ -31,26 +31,8 @@ const Statistics = () => {
 
     const totalDonate = main - local;
 
-//    let sum = 0;
 
-//    for(let item of localData){
-//     sum += item.price
-//    }
-
-//    let mainDataSum = 0;
-
-//    for(let main of mainData){
-//     mainDataSum += main.price
-//    }
-
-//    let totalMain = mainDataSum - sum;
-
-//    let main = 10000;
-
-//    let finalMain = main - sum ;
-
-   
-   const data = [
+    const data = [
     { name: 'Group A', value: totalDonate },
     { name: 'Group B', value: local },
   ];
