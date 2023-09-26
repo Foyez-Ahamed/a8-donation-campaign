@@ -6,7 +6,7 @@ const ErrorPage = () => {
         <div>
 
           <div className='mt-28 flex justify-center items-center'>
-           <h1 className="text-[26px] font-bold text-[#009444]">Error ! Not found data !!</h1>
+           <h1 className="text-[26px] font-bold text-[#009444]">Error ! Not found data on this route !!</h1>
           </div>
 
         <div className="text-center mt-5">
