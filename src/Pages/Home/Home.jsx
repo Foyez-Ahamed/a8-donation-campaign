@@ -15,11 +15,13 @@ const Home = () => {
 
     return (
         <div>
-           <Banner loadData = {loadData} setLoadData = {setLoadData}> </Banner>
+           
+            <Banner  loadData = {loadData} setLoadData = {setLoadData}> </Banner>
 
             <div className="mt-16">
             <Donations loadData = {loadData}></Donations>
             </div>
+            
         </div>
     );
 };

@@ -1,22 +1,31 @@
+import { useState } from "react";
 
-const Banner = ({loadData, setLoadData}) => {
+const Banner = ({loadData, setLoadData})=> {
 
+    const [searchInput, setSearchInput] = useState("");
+
+    const [error, setError] = useState(null);
 
     const handleForm = (e) => {
         e.preventDefault();
-        const searchInput = e.target.search.value;
+        const searchCategory = loadData.filter((item) =>
+          item.category.toLowerCase().includes(searchInput.toLowerCase())
+        );
 
-        if(loadData){
-           setLoadData(searchInput);
-        }
-
-        const searchCategory = loadData.filter(load => load.category === searchInput);
-
-        if(searchCategory){
+    
+        if (searchCategory.length > 0) {
             setLoadData(searchCategory);
-        }
-    }
+            setError(null);
+          } else {
+            setError("No matching categories found.");
+            setLoadData([]);
+          }
 
+      };
+
+      const handleInputChange = (e) => {
+        setSearchInput(e.target.value);
+      };
 
     return (
        <div className="relative">
@@ -30,9 +39,10 @@ const Banner = ({loadData, setLoadData}) => {
            <h1 className=" text-xl lg:text-4xl font-bold">I Grow By Helping People In Need</h1>
 
            <form onSubmit={handleForm}>
-           <input type="text" placeholder="Search here...." name = "search"className="input input-bordered rounded-e-none lg:w-full max-w-xs mt-6"/>
+           <input type="text" placeholder="Search here...." name = "search" value={searchInput} onChange={handleInputChange} className="input input-bordered rounded-e-none lg:w-full max-w-xs mt-6"/>
            <button className="px-6 py-3 bg-[#FF444A] rounded-e-lg text-white">Search</button>
            </form>
+           {error && <p className="text-red-500 mt-8 font-bold">{error}</p>}
          </div>
 
         </div>
@@ -41,5 +51,6 @@ const Banner = ({loadData, setLoadData}) => {
 
     );
 };
+
 
 export default Banner;
